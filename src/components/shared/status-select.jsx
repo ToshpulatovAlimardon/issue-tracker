@@ -6,18 +6,19 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { possibleStatus } from "@/constants";
 
 const StatusSelect = () => {
   return (
     <div>
       <Select>
-        <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Theme" />
+        <SelectTrigger className="w-full">
+          <SelectValue placeholder="Select a status to filter" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="light">Light</SelectItem>
-          <SelectItem value="dark">Dark</SelectItem>
-          <SelectItem value="system">System</SelectItem>
+          {possibleStatus.map((status) => (
+            <SelectItem key={status.id} value={status.label}>{status.label}</SelectItem>
+          ))}
         </SelectContent>
       </Select>
     </div>
