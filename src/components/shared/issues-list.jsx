@@ -28,12 +28,12 @@ const IssuesList = () => {
 
   return (
     <div className='pt-12'>
-      <h2 className='text-2xl font-bold pb-5'>Issues List</h2>
+      <h2 className='text-2xl font-bold pb-4'>Issues List</h2>
       
-      <div className='mr-10'>
+      <div className='mr-10 mb-20'>
         {defaultIssue.map((issue) => (
           <Card className="px-8 py-6 my-5 font-bold" key={issue.id}>{issue.title}{issue.labels.map((badge) => (
-            <Badge key={badge.id} className={`${LabelBg(badge)} mx-5 font-bold`}>{badge.name}</Badge>
+            <Badge key={badge.id} className={`${LabelBg(badge)} mx-5 font-bold cursor-pointer`}>{badge.name}</Badge>
           ))}</Card>
         ))}
       </div>

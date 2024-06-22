@@ -28,13 +28,13 @@ const Labels = () => {
 
   return (
     <div>
-      <h1 className="text-xl font-bold  pb-12">Labels</h1>
+      <h1 className="text-xl font-bold  pb-8">Labels</h1>
       <div>
         {defaultLabels.map((badge) => (
-          <Badge key={badge.id} className={`${LabelBg(badge)} m-1`}>{badge.name}</Badge>
+          <Badge key={badge.id} className={`${LabelBg(badge)} m-1 cursor-pointer`}>{badge.name}</Badge>
         ))}
       </div>
-      <h2 className='text-2xl font-bold pt-12 pb-12'>Status</h2>
+      <h2 className='text-2xl font-bold pt-12 pb-8'>Status</h2>
         
     </div>
   );

@@ -93,4 +93,16 @@ export const defaultIssue = [
     status: "help wanted",
     labels: [{ id: "8", name: "help wanted", color: "lime" }],
   },
+  {
+    id: "9",
+    title: "Target looks weird when I'm with Taylor Swift",
+    status: "bug",
+    labels: [{ id: "9", name: "bug", color: "red" }],
+  },
+  {
+    id: "10",
+    title: "JQuery is not working as expected all the time",
+    status: "wontfix",
+    labels: [{ id: "10", name: "wontfix", color: "white" }],
+  },
 ];
