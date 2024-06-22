@@ -2,8 +2,8 @@ import { defaultLabels } from "@/constants";
 import React from "react";
 import { Badge } from "../ui/badge";
 
-const Labels = () => {
-  
+
+const Labels = () => {  
   const LabelBg = (badge) => {
     switch (badge.color) {
       case "red":
